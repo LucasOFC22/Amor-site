@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2; /* Cor de fundo para o corpo */
+}
+
+.container {
+    text-align: center;
+    background-color: #fff; /* Cor de fundo para o contêiner */
+    border-radius: 10px; /* Borda arredondada para o contêiner */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.button-container {
+    margin-bottom: 20px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin: 10px;
+    background-color: #FF5733; /* Cor de fundo vermelha para os botões */
+    color: white; /* Cor do texto nos botões */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+}
+
+.button-container button:hover {
+    background-color: #e64c21; /* Mudança de cor suave ao passar o mouse */
+}
+
+#message {
+    text-align: left; /* Alinha o texto à esquerda */
+    font-size: 1.5em; /* Tamanho da fonte */
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+    color: #fff; /* Cor do texto da mensagem */
+    position: fixed; /* Define a posição fixa */
+    top: 50%; /* Alinha a parte superior da mensagem no centro vertical */
+    right: -400px; /* Posição inicial para a animação (fora da tela) */
+    transform: translateY(-50%); /* Move a mensagem para cima metade da sua altura */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #FF5733; /* Cor de fundo vermelha para a mensagem */
+    border-radius: 5px; /* Borda arredondada para a mensagem */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    transition: right 0.3s ease, opacity 0.3s ease; /* Transição suave para posição e opacidade */
+    max-width: 400px; /* Define uma largura máxima para a mensagem */
+}
+
+
+#message.show {
+    right: 20px; /* Define a posição final para a animação */
+    opacity: 1; /* Define a opacidade como 1 (visível) quando a classe .show é aplicada */
+}
+
+#autograph {
+    position: fixed;
+    bottom: 20px; /* Definindo a posição inicial */
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #FF5733;
+    color: white;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 1.5em;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: bottom 0.5s ease; /* Adiciona uma transição suave para a propriedade bottom */
+}
+
+#autograph:hover {
+    transform: translateY(-5px);
+}
